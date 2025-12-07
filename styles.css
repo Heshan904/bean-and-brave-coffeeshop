@@ -1,0 +1,20 @@
+:root{
+  --brand:#6f4e37;
+  --accent:#d19c6b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:#222}
+.hero{
+  min-height:64vh;
+  background-image:linear-gradient(rgba(17,17,17,0.45), rgba(17,17,17,0.45)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600&q=80&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+}
+.hero .lead{opacity:.95}
+.card-img-top{height:220px;object-fit:cover}
+footer a{text-decoration:none}
+/* responsive tweaks */
+@media (max-width:767px){
+  .hero{min-height:48vh}
+  .card-img-top{height:180px}
+}
